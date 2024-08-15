@@ -41,12 +41,12 @@ su - postgres
 psql
 
 create database ---------
-create database sonarqubedb;
+create database sonarqubedb;         #customize your db name
 
 create user with strong paswword
-create user sonarqube with encrypted password 'Cloud#436';
+create user sonarqube with encrypted password 'Cloud#436';   #customize your password
 
-grant permission to all privileges to sonrqube user on sonarqubedb;
+grant permission to all privileges to sonrqube user on sonarqubedb;    #add it your db name if you create another db name  
 grant all privileges on database sonarqubedb to sonarqube
 
 exit the psql prompt
